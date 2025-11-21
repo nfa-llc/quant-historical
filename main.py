@@ -156,9 +156,10 @@ Queries the Gexbot history endpoint for each generated combination.
         # The 'noredirect' param (from your TS example) ensures the API
         # returns JSON with a URL instead of a 302 redirect.
         session.params = {
-            "key": API_KEY,
             "noredirect": ""
         }
+        session.headers["Accept"] = "application/json"
+        session.headers["Authorization"] = f"Basic {API_KEY}"
 
         for combo in combinations_to_test:
             ticker = combo["ticker"]
