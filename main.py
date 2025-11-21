@@ -134,7 +134,7 @@ def generate_combinations() -> List[Dict[str, str]]:
 
 def fetch_history_url():
     """
-Queries the Gexbot v2 history endpoint for each generated combination.
+Queries the Gexbot history endpoint for each generated combination.
 """
     if API_KEY == "YOUR_API_KEY_HERE" or API_KEY is None:
         print("Error: Please set your GEXBOT_API_KEY at the top of the script.")

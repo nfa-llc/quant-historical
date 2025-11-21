@@ -1,10 +1,10 @@
-# Gexbot v2 Historical Data Downloader
+# Gexbot Historical Data Downloader
 
-This Python script queries the Gexbot v2 API to retrieve download links for historical data.
+This Python script queries the Gexbot API to retrieve download links for historical data.
 
 ## Overview
 
-This script (`main.py`) is configured to query the Gexbot v2 historical data endpoints. It will iterate through a user-defined list of tickers and data categories ("combos") for a specific date.
+This script (`main.py`) is configured to query the Gexbot historical data endpoints. It will iterate through a user-defined list of tickers and data categories ("combos") for a specific date.
 
 For each valid combination, the script will print a JSON response to the console. This JSON object contains a **`url`** key. You can copy and paste this URL into your browser to download the corresponding historical data file.
 
