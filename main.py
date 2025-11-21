@@ -1,17 +1,17 @@
 import requests
 import os
 import json
-from typing import List, Dict, Any
+from typing import List, Dict
 
 # --- Configuration ---
 
 # Set your API key.
-# It's best practice to set this as an environment variable (GEXBOT_API_KEY)
+# It's best practice to set this as an environment variable (GEXBOT_API_KEY),
 # or you can paste it directly here.
 API_KEY = os.environ.get("GEXBOT_API_KEY", "")
 
 # Set the base URL for the API
-BASE_URL = "https://api.gexbot.com"
+BASE_URL = "https://api.gex.bot"
 
 # Set the specific date you want to query in YYYY-MM-DD format
 DATE_TO_QUERY = "2025-11-14"
@@ -136,7 +136,7 @@ def fetch_history_url():
     """
 Queries the Gexbot v2 history endpoint for each generated combination.
 """
-    if API_KEY == "YOUR_API_KEY_HERE":
+    if API_KEY == "YOUR_API_KEY_HERE" or API_KEY is None:
         print("Error: Please set your GEXBOT_API_KEY at the top of the script.")
         return
 
